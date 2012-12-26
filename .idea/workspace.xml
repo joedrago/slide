@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" afterPath="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="slide.iws" />
@@ -16,8 +15,8 @@
     <file path="$PROJECT_DIR$/gen/com/jdrago/slide/R.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356547660291" ignored="false" />
     <file path="/fragment.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356547671977" ignored="false" />
     <file path="/SlideView.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356549065680" ignored="false" />
-    <file path="/SlideGame.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356548823768" ignored="false" />
-    <file path="/Dummy.txt" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356549319325" ignored="false" />
+    <file path="/SlideGame.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356550075762" ignored="false" />
+    <file path="/Dummy.txt" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356550263314" ignored="false" />
     <file path="/SlideActivity.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356549048080" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,10 +97,19 @@
       <file leaf-file-name="SlideGame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.37866354">
+            <state line="53" column="2" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.3321492">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GLU.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/android/sources/android-15/android/opengl/GLU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="19" selection-start="2431" selection-end="2431" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,9 +134,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/example/slide/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/slide/SlideActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" />
         <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideActivity.java" />
         <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java" />
+        <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" />
       </list>
     </option>
   </component>
@@ -426,6 +434,11 @@
       <created>1356547326314</created>
       <updated>1356547326314</updated>
     </task>
+    <task id="LOCAL-00001" summary="enable git">
+      <created>1356549333204</created>
+      <updated>1356549333204</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -435,11 +448,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -449,8 +464,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.67007965" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -493,7 +506,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="lots of renames" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -506,6 +519,8 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="enable git" />
+    <MESSAGE value="lots of renames" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -586,9 +601,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/android/sources/android-15/android/opengl/GLU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="19" selection-start="2431" selection-end="2431" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.37866354">
+        <state line="53" column="2" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.3321492">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

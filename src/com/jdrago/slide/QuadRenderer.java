@@ -7,7 +7,6 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLUtils;
 import android.opengl.Matrix;
-import android.os.SystemClock;
 import android.util.Log;
 
 import javax.microedition.khronos.egl.EGLConfig;
@@ -42,26 +41,55 @@ class QuadRenderer implements GLSurfaceView.Renderer
     {
     }
 
+    public void onDrawFrame(GL10 glUnused)
+    {
+//        renderBegin(0.0f, 0.0f, 1.0f);
+//        renderQuad(5,5,50,50, 1, 1, 0, 1);
+//        renderQuad(20,20,50,50, 1, 0, 1, 0.5f);
+//        renderEnd();
+    }
+
     class Quad
     {
-        public Quad(int ax, int ay, int aw, int ah)
+        public Quad()
+        {
+            x = 0;
+            y = 0;
+            w = 1;
+            h = 1;
+            r = 1;
+            g = 1;
+            b = 1;
+        }
+
+        public Quad(int ax, int ay, int aw, int ah, float ar, float ag, float ab, float aa)
         {
             x = ax;
             y = ay;
             w = aw;
             h = ah;
+            r = ar;
+            g = ag;
+            b = ab;
+            a = aa;
         }
 
         int x;
         int y;
         int w;
         int h;
+        float r;
+        float g;
+        float b;
+        float a;
     }
 
     public void renderQuad(Quad q)
     {
+        GLES20.glEnable(GLES20.GL_BLEND);
+        GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA, GLES20.GL_ONE_MINUS_SRC_ALPHA);
         GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
-        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureID_);
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, whiteID_);
 
         verts_.position(TRIANGLE_VERTICES_DATA_POS_OFFSET);
         GLES20.glVertexAttribPointer(posHandle_, 3, GLES20.GL_FLOAT, false, TRIANGLE_VERTICES_DATA_STRIDE_BYTES, verts_);
@@ -81,15 +109,14 @@ class QuadRenderer implements GLSurfaceView.Renderer
         Matrix.multiplyMM(viewProjMatrix_, 0, projMatrix_, 0, viewProjMatrix_, 0);
 
         GLES20.glUniformMatrix4fv(viewProjMatrixHandle_, 1, false, viewProjMatrix_, 0);
+        GLES20.glUniform4f(vertColorHandle_, q.r, q.g, q.b, q.a);
         GLES20.glDrawElements(GLES20.GL_TRIANGLES, 6, GLES20.GL_UNSIGNED_INT, quadIndices_);
         checkGlError("glDrawArrays");
     }
 
-    public void onDrawFrame(GL10 glUnused)
+    public void renderQuad(int x, int y, int w, int h, float r, float g, float b, float a)
     {
-        renderBegin(0.0f, 0.0f, 1.0f);
-        renderQuad(new Quad(5,5,50,50));
-        renderEnd();
+        renderQuad(new Quad(x, y, w, h, r, g, b, a));
     }
 
     public void onSurfaceChanged(GL10 glUnused, int width, int height)
@@ -139,6 +166,13 @@ class QuadRenderer implements GLSurfaceView.Renderer
             throw new RuntimeException("Could not get attrib location for uMVPMatrix");
         }
 
+        vertColorHandle_ = GLES20.glGetUniformLocation(shaderProgram_, "u_color");
+        checkGlError("glGetUniformLocation vertColorHandle");
+        if (vertColorHandle_ == -1)
+        {
+            throw new RuntimeException("Could not get attrib location for vertColorHandle");
+        }
+
         /*
          * Create our texture. This has to be done each time the
          * surface is created.
@@ -147,8 +181,8 @@ class QuadRenderer implements GLSurfaceView.Renderer
         int[] textures = new int[1];
         GLES20.glGenTextures(1, textures, 0);
 
-        textureID_ = textures[0];
-        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureID_);
+        whiteID_ = textures[0];
+        GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, whiteID_);
 
         GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER, GLES20.GL_NEAREST);
         GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MAG_FILTER, GLES20.GL_LINEAR);
@@ -156,7 +190,7 @@ class QuadRenderer implements GLSurfaceView.Renderer
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_WRAP_S, GLES20.GL_REPEAT);
         GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_WRAP_T, GLES20.GL_REPEAT);
 
-        InputStream is = context_.getResources().openRawResource(R.raw.robot);
+        InputStream is = context_.getResources().openRawResource(R.raw.white);
         Bitmap bitmap;
         try
         {
@@ -266,6 +300,7 @@ class QuadRenderer implements GLSurfaceView.Renderer
             "uniform mat4 uMVPMatrix;\n" +
                     "attribute vec4 aPosition;\n" +
                     "attribute vec2 aTextureCoord;\n" +
+                    "uniform vec4 u_color;\n" +
                     "varying vec2 vTextureCoord;\n" +
                     "void main() {\n" +
                     "  gl_Position = uMVPMatrix * aPosition;\n" +
@@ -276,8 +311,10 @@ class QuadRenderer implements GLSurfaceView.Renderer
             "precision mediump float;\n" +
                     "varying vec2 vTextureCoord;\n" +
                     "uniform sampler2D sTexture;\n" +
+                    "uniform vec4 u_color;\n" +
                     "void main() {\n" +
-                    "  gl_FragColor = texture2D(sTexture, vTextureCoord);\n" +
+                    "vec4 t = texture2D(sTexture, vTextureCoord);" +
+                    "gl_FragColor.rgba = u_color.rgba * t.rgba;\n" +
                     "}\n";
 
     private float[] viewProjMatrix_ = new float[16];
@@ -286,10 +323,11 @@ class QuadRenderer implements GLSurfaceView.Renderer
     private float[] viewMatrix_ = new float[16];
 
     private int shaderProgram_;
-    private int textureID_;
+    private int whiteID_;
     private int viewProjMatrixHandle_;
     private int posHandle_;
     private int texHandle_;
+    private int vertColorHandle_;
 
     private Context context_;
     private static String TAG = "QuadRenderer";

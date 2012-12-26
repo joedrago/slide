@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\workdroid\slide\src\com\jdrago\slide\SlideGame.java" afterPath="$PROJECT_DIR$/src/com/jdrago/slide/QuadRenderer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/raw/white.png" />
+      <change type="DELETED" beforePath="C:\workdroid\slide\res\raw\robot.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jdrago/slide/QuadRenderer.java" afterPath="$PROJECT_DIR$/src/com/jdrago/slide/QuadRenderer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" afterPath="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java" afterPath="$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -12,12 +14,12 @@
     <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356547329135" ignored="false" />
     <file path="$PROJECT_DIR$/res/layout/main.xml" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356547329472" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/compiler.xml" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356547379293" ignored="false" />
-    <file path="/fragment.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356557435181" ignored="false" />
+    <file path="/fragment.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356560560595" ignored="false" />
     <file path="/SlideView.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356557690927" ignored="false" />
     <file path="/SlideGame.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356557604968" ignored="false" />
-    <file path="/Dummy.txt" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356550281335" ignored="false" />
+    <file path="/Dummy.txt" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356561198153" ignored="false" />
     <file path="/SlideActivity.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356549048080" ignored="false" />
-    <file path="/QuadRenderer.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356558147547" ignored="false" />
+    <file path="/QuadRenderer.java" changelist="c3a4d7eb-1b3e-40a1-96fe-d70936ef7e4c" time="1356561318300" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,22 @@
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java" line="2" class="SlideView.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -67,22 +85,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java" line="2" class="SlideView.java" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -104,26 +106,30 @@
       <file leaf-file-name="SlideView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+            <state line="15" column="1" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SlideGame.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SlideGame.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="20" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="0.3985932">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuadRenderer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="QuadRenderer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/QuadRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="552" selection-end="552" vertical-scroll-proportion="-0.7772567">
-              <folding />
+            <state line="49" column="0" selection-start="1417" selection-end="1576" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +137,7 @@
       <file leaf-file-name="GLES20.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://C:/android/sources/android-15/android/opengl/GLES20.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="654" column="40" selection-start="33673" selection-end="33673" vertical-scroll-proportion="0.0">
+            <state line="337" column="56" selection-start="25593" selection-end="25593" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,8 +174,8 @@
         <option value="$PROJECT_DIR$/src/com/example/slide/SlideActivity.java" />
         <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideActivity.java" />
         <option value="$PROJECT_DIR$/src/SlideGame.java" />
-        <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" />
         <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java" />
+        <option value="$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java" />
         <option value="$PROJECT_DIR$/src/com/jdrago/slide/QuadRenderer.java" />
       </list>
     </option>
@@ -295,8 +301,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -335,6 +341,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -360,19 +379,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -482,7 +488,11 @@
       <created>1356550285010</created>
       <updated>1356550285010</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="split off QuadRenderer">
+      <created>1356558264158</created>
+      <updated>1356558264158</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -492,22 +502,22 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67007965" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1686" y="2" width="770" height="321" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67121726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1686" y="2" width="770" height="321" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.67007965" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -550,7 +560,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="lots of renames" />
+    <option name="LAST_COMMIT_MESSAGE" value="split off QuadRenderer" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -565,6 +575,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="enable git" />
     <MESSAGE value="lots of renames" />
+    <MESSAGE value="split off QuadRenderer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -574,9 +585,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java">
+    <entry file="file://C:/android/sources/android-15/android/opengl/GLU.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+        <state line="76" column="19" selection-start="2431" selection-end="2431" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -584,7 +595,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/QuadRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -612,11 +625,6 @@
         <state line="253" column="0" selection-start="1198" selection-end="9811" vertical-scroll-proportion="0.8188277" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/robot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://C:/android/samples/android-15/BasicGLSurfaceView/src/com/example/android/basicglsurfaceview/BasicGLSurfaceViewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="974" selection-end="1063" vertical-scroll-proportion="0.27901524" />
@@ -629,18 +637,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/android/sources/android-15/android/opengl/GLES20.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="654" column="40" selection-start="33673" selection-end="33673" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/android/sources/android-15/java/nio/FloatBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.3321492">
-          <folding />
-        </state>
+        <state line="34" column="22" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.3321492" />
       </provider>
     </entry>
     <entry file="file://C:/android/sources/android-15/android/opengl/Matrix.java">
@@ -657,24 +656,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java">
+    <entry file="file://C:/android/sources/android-15/android/opengl/GLES20.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+        <state line="337" column="56" selection-start="25593" selection-end="25593" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java">
+    <entry file="file://$PROJECT_DIR$/res/raw/white.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+        <state line="15" column="1" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/QuadRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="552" selection-end="552" vertical-scroll-proportion="-0.7772567">
-          <folding />
+        <state line="49" column="0" selection-start="1417" selection-end="1576" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jdrago/slide/SlideGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="0.3985932">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

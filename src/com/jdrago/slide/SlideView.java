@@ -13,8 +13,4 @@ class SlideView extends GLSurfaceView
         setEGLContextClientVersion(2);
         setRenderer(new SlideGame(context));
     }
-
-    public void onDrawFrame(GL10 glUnused)
-    {
-    }
 }

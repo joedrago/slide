@@ -102,6 +102,7 @@ class QuadRenderer implements GLSurfaceView.Renderer
         GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA, GLES20.GL_ONE_MINUS_SRC_ALPHA);
         GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
 
+        int x = q.x;
         int digitCount = 0;
         int textureID = whiteID_;
         FloatBuffer verts = whiteVerts_;
@@ -137,9 +138,23 @@ class QuadRenderer implements GLSurfaceView.Renderer
                 }
             }
             while(v > 0);
+
+            if((q.type == QuadRenderType.QRT_FLOAT) && (digitCount == 4))
+            {
+                digitBuffer_[digitCount++] = 0; // leading zero
+            }
+
+            // WORST HACK EVER
+            if(q.type == QuadRenderType.QRT_FLOAT)
+            {
+                x -= digitCount * q.w; // right align
+            }
+            else
+            {
+                x -= (digitCount * q.w) / 2; // center align
+            }
         }
 
-        int x = q.x;
         for(int i = 0; i < digitCount; i++)
         {
             GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureID);

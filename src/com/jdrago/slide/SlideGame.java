@@ -71,7 +71,7 @@ public class SlideGame extends QuadRenderer
                 int y = i / size_;
                 int pixelX = WINDOW_MARGIN + (x * boxDim_) + (x * BOX_SPACING);
                 int pixelY = WINDOW_MARGIN + (y * boxDim_) + (y * BOX_SPACING);
-                int color = i % COLOR_COUNT;
+                int color = value % COLOR_COUNT;
                 float r = COLORS[color][0];
                 float g = COLORS[color][1];
                 float b = COLORS[color][2];

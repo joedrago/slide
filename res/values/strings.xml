@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">slide</string>
+    <string name="app_name">Slide</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="s3">Switch to 3x3</string>
+    <string name="s4">Switch to 4x4</string>
+    <string name="s5">Switch to 5x5</string>
+    <string name="s6">Switch to 6x6</string>
+    <string name="s7">Switch to 7x7</string>
+    <string name="s8">Switch to 8x8</string>
 </resources>

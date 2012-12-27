@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/shuffle"
+            android:title="@string/shuffle"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:showAsAction="ifRoom|withText"/>
+    <item
+            android:id="@+id/s3"
+            android:title="@string/s3"/>
+    <item
+            android:id="@+id/s4"
+            android:title="@string/s4"/>
+    <item
+            android:id="@+id/s5"
+            android:title="@string/s5"/>
+    <item
+            android:id="@+id/s6"
+            android:title="@string/s6"/>
+    <item
+            android:id="@+id/s7"
+            android:title="@string/s7"/>
+    <item
+            android:id="@+id/s8"
+            android:title="@string/s8"/>
+</menu>

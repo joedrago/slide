@@ -211,5 +211,5 @@ public class SlideGame extends QuadRenderer
     private int[] grid_;
 
     private static final int WINDOW_MARGIN = 10;
-    private static final int BOX_SPACING = 2;
+    private static final int BOX_SPACING = 4;
 }
